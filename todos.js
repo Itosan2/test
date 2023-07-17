@@ -1,19 +1,19 @@
 const todos = [
-    {
-        id:1,
-        text: 'Dispose trash',
-        isCompleted: true
-    },
-    {
-        id:2,
-        text: 'Meeting',
-        isCompleted: true
-    },
-    {
-        id:3,
-        text: 'Dentist appt',
-        isCompleted: false
-    }
+  {
+    id: 1,
+    text: "Dispose trash ffdfdfdfd",
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    text: "Meeting",
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    text: "Dentist appt",
+    isCompleted: false,
+  },
 ];
 
 //console.log(todos[1].text)
@@ -53,10 +53,12 @@ console.log(todoCompleted);
 
 */
 
-const todoCompleted = todos.filter(function(todo){
+const todoCompleted = todos
+  .filter(function (todo) {
     return todo.isCompleted === true;
-}).map(function(todo){
+  })
+  .map(function (todo) {
     return todo.text;
-})
+  });
 
 console.log(todoCompleted);
